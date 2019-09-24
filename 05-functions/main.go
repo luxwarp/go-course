@@ -3,11 +3,13 @@ package main
 import "fmt"
 
 // function declaration.
+// It's structure is: func (keyword) name(parameter, parameter type) return type.
+
+// add takes two numbers and returns the summary.
 func add(num1, num2 float32) float32 {
 	return num1 + num2
 }
 
-// this is the initial function that always gets run.
 func main() {
 	fmt.Println("Functions")
 	fmt.Println("1.3 + 1 =", add(1.3, 1))
@@ -15,6 +17,8 @@ func main() {
 }
 
 // you can also declare functions after main().
+
+// sub takes two numbers and returns the difference.
 func sub(num1, num2 float32) float32 {
 	return num1 - num2
 }
