@@ -14,8 +14,8 @@ var randomNumber int
 func main() {
 	fmt.Println("Guess the number")
 	fmt.Printf("Enter a number above 0 that you want to guess for: ")
-	fmt.Scanln(&maxNumber)
-	fmt.Println("Okey, now it's time to guess what number between 0 and", maxNumber, "that I have chosen.")
+	fmt.Scan(&maxNumber)
+	fmt.Println("Okey, now it's time to guess what number between 1 and", maxNumber, "that I have chosen.")
 	rand.Seed(time.Now().UnixNano())
 
 	randomNumber = rand.Intn(maxNumber-minNumber+1) + minNumber
@@ -30,7 +30,7 @@ func main() {
 		} else if guessedNumber > randomNumber {
 			fmt.Println("To high. Try again!")
 		} else {
-			fmt.Println("Nice job! That correct. You win!")
+			fmt.Println("Nice job! That's correct. You win!")
 			return
 		}
 	}
