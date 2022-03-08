@@ -6,7 +6,7 @@ Go (GoLang) repository with code examples.
 
 ## License
 
-ISC © 2019 [Mikael Luxwarp Carlsson](https://codeiolo.org)
+ISC © 2022 [Mikael Luxwarp Carlsson](https://connumin.com)
 
 ## Note
 
