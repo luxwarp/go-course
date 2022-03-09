@@ -6,16 +6,21 @@ import (
 	"time"
 )
 
+const sectionHeader string = `
+#############################
+#      Guess the number     #
+#############################`
+
 const minNumber int = 1
 
 var maxNumber int
 var randomNumber int
 
 func main() {
-	fmt.Println("Guess the number")
+	fmt.Println(sectionHeader)
 	fmt.Printf("Enter a number above 0 that you want to guess for: ")
 	fmt.Scan(&maxNumber)
-	fmt.Println("Okey, now it's time to guess what number between 1 and", maxNumber, "that I have chosen.")
+	fmt.Println("Okey, now it's time to guess what number between 1 and", maxNumber, ".")
 	rand.Seed(time.Now().UnixNano())
 
 	randomNumber = rand.Intn(maxNumber-minNumber+1) + minNumber

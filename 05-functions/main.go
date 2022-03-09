@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+const sectionHeader string = `
+#############################
+#        05-Functions       #
+#############################`
+
 // function declaration.
 // It's structure is: func (keyword) name(parameter, parameter type) return type.
 
@@ -11,7 +16,7 @@ func add(num1, num2 float32) float32 {
 }
 
 func main() {
-	fmt.Println("Functions")
+	fmt.Println(sectionHeader)
 	fmt.Println("1.3 + 1 =", add(1.3, 1))
 	fmt.Println("10 - 2.3 =", sub(10, 2.3))
 }

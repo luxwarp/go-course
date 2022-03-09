@@ -1,15 +1,13 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 const sectionHeader string = `
 #############################
-#       06-Multi file       #
+#        Section name       #
 #############################`
 
 func main() {
 	fmt.Println(sectionHeader)
-	fmt.Println(greet("Mikael"))
+
 }
