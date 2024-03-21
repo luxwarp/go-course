@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 const sectionHeader string = `
@@ -21,7 +20,6 @@ func main() {
 	fmt.Printf("Enter a number above 0 that you want to guess for: ")
 	fmt.Scan(&maxNumber)
 	fmt.Println("Okey, now it's time to guess what number between 1 and", maxNumber, ".")
-	rand.Seed(time.Now().UnixNano())
 
 	randomNumber = rand.Intn(maxNumber-minNumber+1) + minNumber
 
